@@ -1,0 +1,28 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logotype cart";
+  margin-top: 1.875rem;
+  a {
+    color: #161518;
+  }
+  &--logotype {
+    grid-area: logotype;
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: lowercase;
+    }
+  }
+  &--cart {
+    grid-area: cart;
+    text-align: right;
+    a {
+      font-size: 0.75rem;
+      transition: color .3s ease;
+      &:hover {
+        color: #8142ff;
+      }
+    }
+  }
+}

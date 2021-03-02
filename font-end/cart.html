@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="We handmake teddy bears and are famous for crafting the finest jointed teddy bears and mohair teddy bears. View our handmade teddy bears."
+		/>
+		<meta name="robots" content="all" />
+		<meta property="og:title" content="Orinoco — Handmade Teddy Bears" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta
+			property="og:description"
+			content="We handmake teddy bears and are famous for crafting the finest jointed teddy bears and mohair teddy bears. View our handmade teddy bears."
+		/>
+		<meta property="og:site_name" content="Orinoco — Handmade Teddy Bears" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/favicon.svg" type="image/svg" />
+		<link rel="stylesheet" href="main.css" />
+		<script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+		<script src="./js/cart.js" defer></script>
+		<title id="htmlTitle">Your Cart — Orinoco</title>
+	</head>
+	<body>
+		<header class="nav container">
+			<section class="nav--logotype">
+				<a href="index.html" class="nav--logotype--link">
+					<h1>Orinoco</h1>
+				</a>
+			</section>
+			<aside class="nav--cart">
+				<a href="cart.html" class="nav--cart--link">
+					<span class="fas fa-shopping-cart"></span>
+				</a>
+			</aside>
+		</header>
+
+		<section class="container">
+			<div class="product--title">
+				<h2 id="title"></h2>
+			</div>
+		</section>
+		<aside class="aside--cart container" id="hiddenForm">
+			<div class="aside--cart--bloc">
+				<form id="Form" class="aside--cart--bloc--form">
+					<div class="aside--cart--bloc--form--input">
+						<label for="firstName" class="aside--cart--bloc--form--input--text"
+							>First name</label
+						>
+						<input
+							type="text"
+							class="aside--cart--bloc--form--input--control"
+							id="firstName"
+							placeholder="Harvey"
+							required
+						/>
+					</div>
+					<div class="aside--cart--bloc--form--input">
+						<label for="lastName" class="aside--cart--bloc--form--input--text"
+							>Last name</label
+						>
+						<input
+							type="text"
+							class="aside--cart--bloc--form--input--control"
+							id="lastName"
+							placeholder="Sheldon"
+							required
+						/>
+					</div>
+					<div class="aside--cart--bloc--form--input">
+						<label for="address" class="aside--cart--bloc--form--input--text"
+							>Adress</label
+						>
+						<input
+							type="text"
+							class="aside--cart--bloc--form--input--control"
+							id="address"
+							placeholder="1540  Morningview Lane"
+							required
+						/>
+					</div>
+					<div class="aside--cart--bloc--form--input">
+						<label for="city" class="aside--cart--bloc--form--input--text">City</label>
+						<input
+							type="text"
+							class="aside--cart--bloc--form--input--control"
+							id="city"
+							placeholder="New York"
+							required
+						/>
+					</div>
+					<div class="aside--cart--bloc--form--input">
+						<label for="email" class="aside--cart--bloc--form--input--text">Mail</label>
+						<input
+							type="email"
+							class="aside--cart--bloc--form--input--control"
+							id="email"
+							placeholder="sheldon.harvey@mail.com"
+							required
+						/>
+					</div>
+				</form>
+				<div class="aside--cart--bloc--btn">
+					<button class="cta" id="btn-validation">Check out</button>
+					<span class="invalidRegex" id="invalidRegex">Invalid fields</span>
+				</div>
+		</aside>
+
+		<main class="cart container" id="cart">
+			<div class="cartData" id="hiddenData">
+				<div class="cartDataQty">Quantity</div>
+				<div class="cartDataPrice">Price</div>
+				<div class="cartDataTotal">Total</div>
+			</div>
+			<template id="templateCart">
+				<div class="cartBloc">
+					<div class="cartBlocImg">
+						<img id="imageUrl" src="" alt="" />
+					</div>
+					<div class="cartBlocName">
+						<h3 id="name" class="cartBlocNameTitle"></h3>
+						<p id="color"></p>
+					</div>
+					<div class="cartBlocQty">
+						<p id="qty"></p>
+					</div>
+					<div class="cartBlocPrice">
+						<p id="price"></p>
+					</div>
+					<div class="cartBlocTotal">
+						<p id="total"></p>
+					</div>
+				</div>
+			</template>
+			<div class="cartBottom" id="hiddenClear">
+				<button id="clear" class="cartBottomClear">Clear your cart</button>
+				<div id="subtotal" class="cartBottomSubtotal"></div>
+			</div>
+		</main>
+
+		<footer class="footer container">
+			<div class="footer--text">
+				<p>© 2021 · Orinoco · All rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+@media (max-width: 89.875rem) {
+	.aside--cart {
+		display: block;
+		&--bloc {
+			position: relative;
+			width: 100%;
+			gap: 1rem;
+			&--text {
+				text-align: inherit;
+			}
+		}
+	}
+	.product--title {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	.product--bloc {
+		max-width: 100%;
+		&--data--add {
+			position: relative;
+		}
+	}
+	.cartData {
+		max-width: 100%;
+	}
+	.cartBloc {
+		max-width: 100%;
+	}
+	.cartBottom {
+		max-width: 100%;
+		grid-template-columns: none;
+	}
+}
+
+@media (max-width: 48rem) {
+	.product--bloc {
+		display: block;
+	}
+}

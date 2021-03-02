@@ -1,0 +1,10 @@
+@keyframes order {
+	0% {
+		transform: translate(0%, -100%) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(50%, -200%) scale(0);
+		opacity: 0;
+	}
+}

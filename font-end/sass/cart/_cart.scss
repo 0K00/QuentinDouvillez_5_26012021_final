@@ -1,0 +1,91 @@
+.cart {
+	display: flex;
+	flex-direction: column;
+	&Data {
+		max-width: 70%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		gap: 5%;
+		grid-template-areas: '. . qty price total';
+		text-align: center;
+		border-bottom: 1px solid #414047;
+		padding-bottom: 1rem;
+		color: #161518;
+		font-weight: 600;
+		&Qty {
+			grid-area: qty;
+		}
+		&Price {
+			grid-area: price;
+		}
+		&Total {
+			grid-area: total;
+		}
+	}
+	&Bloc {
+		max-width: 70%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: '. . . . .';
+		gap: 5%;
+		padding: 3rem 0;
+		border-bottom: 1px solid #cbcad3;
+		&:last-child {
+			border-bottom: 1px solid #414047;
+		}
+		&Img {
+			img {
+				min-width: 5rem;
+				border-radius: 0.25rem;
+			}
+		}
+		&Name {
+			&Title {
+				color: #161518;
+				font-weight: 700;
+			}
+		}
+		&Qty {
+			text-align: center;
+		}
+		&Price {
+			text-align: center;
+		}
+		&Total {
+			text-align: center;
+		}
+	}
+	&Bottom {
+		order: 3;
+		max-width: 70%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 'clear . . . subtotal';
+		margin-top: 1rem;
+		&Clear {
+			grid-area: clear;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			border: none;
+			padding: 0.5rem 0;
+			border-radius: 0.25rem;
+			background-color: #e7e6ec;
+			color: #161518;
+			font-size: 0.75rem;
+			font-weight: 600;
+			transition: all 0.3s;
+			&:hover {
+				background-color: #d9d7e4;
+			}
+		}
+		&Subtotal {
+			grid-area: subtotal;
+			text-align: center;
+			color: #8142ff;
+			font-size: 1.3rem;
+			font-weight: 600;
+		}
+	}
+}
